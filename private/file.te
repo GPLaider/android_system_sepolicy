@@ -4,6 +4,9 @@ type proc_allocinfo, fs_type, proc_type;
 # /proc/config.gz
 type config_gz, fs_type, proc_type;
 
+# /proc/sys/vm/compaction_proactiveness
+type proc_compaction_proactiveness, fs_type, proc_type;
+
 # /proc/sys/kernel/firmware_config/*
 until_board_api(202604, `type proc_firmware_config, fs_type, proc_type;')
 
